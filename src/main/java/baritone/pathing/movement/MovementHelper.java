@@ -138,7 +138,7 @@ public interface MovementHelper extends ActionCosts, Helper {
                 return false;
             }
             BlockState up = bsi.get0(x, y + 1, z);
-            if (!up.getFluidState().isEmpty() || up.getBlock() instanceof WaterlilyBlock) {
+            if (up.getBlock() instanceof WaterlilyBlock) {
                 return false;
             }
             return true;
