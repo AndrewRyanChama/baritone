@@ -129,7 +129,7 @@ public interface MovementHelper extends ActionCosts, Helper {
                 return false;
             }
             IBlockState up = bsi.get0(x, y + 1, z);
-            if (up.getBlock() instanceof BlockLiquid || up.getBlock() instanceof BlockLilyPad) {
+            if (up.getBlock() instanceof BlockLilyPad) {
                 return false;
             }
             return block == Blocks.WATER || block == Blocks.FLOWING_WATER;
